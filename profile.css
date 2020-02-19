@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,400,600,200&display=swap');
+body {
+  text-align: center;
+  background-color: #02010A;
+}
+* {
+  margin: 0;
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes zoomLeft{
+  from {opacity: 0; left: -150vw;}
+  to {opacity: 1; left: 0;}
+}
+
+.title {
+  font-family: 'Poppins';
+  text-align: center;
+  background-color: #FF3B5F;
+  color: white;
+  width: 100vw;
+  font-size: 1.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  position: sticky;
+  box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.3s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.tc {
+  color: white;
+  font-family: "Poppins";
+  font-size: 15px;
+}
+a {
+  color: white;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.3s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 200;
+}
+
+.back {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  z-index: 3;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+  display: inline; 
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+
+.desc-container {
+  background-color: rgba(0,0,0,0.1);
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 6px;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: darkgray;
+}
+
+h3 {
+  text-align: center;
+}
+
+.designs {
+  color: darkgray;
+  object-fit: cover;
+  text-align: center;
+}
+
+.designs img {
+  width: 40%;
+  border-radius: 6px;
+  transition: 0.6s;
+}
+
+.designs img:hover {
+  box-shadow: rgba(0,0,0,0.5) 0 0 23px;
+  transition: 0.6s;
+}

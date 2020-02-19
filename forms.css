@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:500,400,600,200&display=swap');
 body {
   text-align: center;
-  background-color: lightsteelblue;
+  background-color: #02010A;
 }
 * {
   margin: 0;
@@ -20,7 +20,7 @@ body {
 .title {
   font-family: 'Poppins';
   text-align: center;
-  background-color: #3f3d56;
+  background-color: #FF3B5F;
   color: white;
   width: 100vw;
   font-size: 1.75em;
@@ -35,7 +35,11 @@ body {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
+.tc {
+  color: white;
+  font-family: "Poppins";
+  font-size: 15px;
+}
 a {
   color: white;
   opacity: 0;
@@ -93,7 +97,7 @@ a {
   margin: 10px;
   font-family: "Poppins";
   font-size: 20px;
-  color: #6c63ff;
+  color: #FFCC79;
   font-weight: 600;
   opacity: 0;
   animation-name: fade;
@@ -120,7 +124,7 @@ input {
   padding: 10px;
   font-family: "Poppins";
   color: white;
-  background-color: #6c63ff;
+  background-color: #FF3B5F;
   margin: 10px;
   border-radius: 10px;
   text-transform: uppercase;
