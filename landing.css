@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,400,800&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #3f3d56;
+}
+
+nav {
+  font-family: 'Poppins', sans-serif;
+  height: 50px;
+  text-align: center;
+  background-color: #3f3d56;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  box-shadow: rgba(0,0,0,0.5) 0 0 5px;
+}
+
+nav ul {
+  padding: 12px;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+}
+
+nav > a {
+  display: block;
+}
+
+nav a {
+  color: white;
+  text-decoration-color: #3f3d56;
+  transition: 0.3s;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.0s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+nav a:hover {
+  text-decoration-color: white;
+}
+
+.header {
+  text-align: center;
+  background-color: #b0c4de;
+  height: 100vh;
+}
+
+.headerContent {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainHeader {
+  color: #6c63ff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.1s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.subHeader {
+  color: #3f3d56;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.35s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.headerImg {
+  width: 75%;
+  z-index: -1;
+  max-width: 600px;
+  opacity: 0;
+  animation-name: fade;
+  animation-delay: 0.5s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes zoomLeft {
+  from {bottom: -100px;}
+  to {bottom: 0;}
+}
+
+.credits {
+  width: 100%;
+  font-family: 'Poppins';
+  background-color: #2f2e41;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+  position: fixed;
+  bottom: -100px;
+  left: 0;
+  font-size: 0.9em;
+  animation-name: zoomLeft;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.credits a {
+  color: white;
+  text-decoration-color: #2f2e41;
+  transition: 0.3s;
+}
+
+.credits a:hover {
+  text-decoration-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.description {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  height: 60vh;
+  background-color: #3f3d56;
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  background-color: #3f3d56;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 2em;
+  color: white;
+  width: 100%;
+  font-weight: 500;
+}
+
+.column {
+  width: 30%;
+  height: 50vh;
+  background-color: #6c63ff;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.column-content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.column-title {
+  font-size: 1.5em !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.column p {
+  font-size: 1em;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.left-column {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 10px;
+}
+
+.right-column {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 10px;
+}
+
+.column i {
+  color: white;
+  font-size: 3em;
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    margin: 5%;
+  }
+
+  .column {
+    width: 90%;
+    border-radius: 10px !important;
+    margin: 10px !important;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
